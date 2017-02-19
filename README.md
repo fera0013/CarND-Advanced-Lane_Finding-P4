@@ -2,6 +2,7 @@
 # **Finding Lane Lines (Advanced)** 
 ***
 
+Goal of this project is the implementation of a software pipeline to identify and draw the lane boundaries in a video from a front-facing dashcam.
 ## Compute the camera calibration matrix and distortion coefficients given a set of chessboard images
 
 As a first step, "object points" are prepared, representing the (x, y, z) coordinates of the chessboard corners in the world. The subsequent calculations are based on the assumption of a chessboard, which is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `objpoints` will be appended with a copy of it every time all chessboard corners are succesfully detected in a test image.  `imgpoints` will be appended with the (x, y) pixel position of each of the corners in the image plane with each successful chessboard detection. The chessboard images with the found corners are saved to */output_images/corners/*.
